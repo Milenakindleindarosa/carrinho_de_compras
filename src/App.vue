@@ -10,17 +10,54 @@ import { ref, computed } from "vue";
 
   <header>
     <div>
+
       <img src="https://res.cloudinary.com/beleza-na-web/image/upload/f_svg,fl_progressive,q_auto:eco/v1/blz/assets-store/0.0.505/images/store/47/logo.svg" alt="Logo-oBoticário">
       <div>
         <form action="">
 
           <p>
-            <textarea name="pesquisa" id="pesquisar">Pesquisar</textarea>
+            <textarea name="pesquisa" id="pesquisar">
+              Pesquisar
+            </textarea>
             <input type="submit" value="">
           </p>
           
         </form>
       </div>
+
+      <ul>
+        <li>
+          <a href="">Termos</a>
+        </li>
+        <li>
+          <a href="">Equipe</a>
+        </li>
+        <li>
+          <a href="">Envio</a>
+        </li>
+        <li>
+          <a href="">Devoluções</a>
+        </li>
+      </ul>
+
+      <ul>
+        <li @click="abrirCarrinho">
+          <p>
+
+          </p>
+        </li>
+        <li>
+          <p>
+
+          </p>
+        </li>
+        <li>
+          <p>
+            
+          </p>
+        </li>
+      </ul>
+
     </div>
   </header>
   
