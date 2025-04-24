@@ -50,6 +50,8 @@ import { ref, computed } from "vue";
   
 </template>
 
+<style src="./assets/reset.css"></style>
+
 <style scoped>
 
 </style>
