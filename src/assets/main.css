@@ -1,1 +1,28 @@
+/*---------------------------------
+              Header
+---------------------------------*/
 
+header div
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(209, 186, 255);
+    padding: 1vw;
+}
+
+header div div form
+{
+    display: flex;
+}
+
+header div div form p input
+{
+    font-size: 1.5rem;
+    border: none;
+}
+header div div form p span
+{
+    font-size: 1.25rem;
+    border: none;
+
+}
