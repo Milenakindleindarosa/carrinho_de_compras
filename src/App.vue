@@ -2,6 +2,17 @@
 
 import { ref, computed } from "vue";
 
+const carrinho = 
+{
+  itens: 
+  [
+    {
+      id: 1,
+      nome: 'Combo Bubbaloo Morango',
+    }
+  ]
+}
+
 </script>
 
 
