@@ -16,11 +16,12 @@ import { ref, computed } from "vue";
         <form action="">
 
           <p>
-            <input type="text" placeholder="Pesquisar..." >
-            <span class="fa-solid fa-magnifying-glass" ></span>
-          </p>
-          
-          
+            <input type="text" v-model="input" placeholder="Pesquisar..."/>
+            <button>
+              <span class="fa-solid fa-magnifying-glass" ></span>
+            </button>
+          </p> 
+
         </form>
       </div>
 
