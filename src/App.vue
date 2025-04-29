@@ -32,19 +32,20 @@ import { ref, computed } from "vue";
 
       <ul>
 
-        <li class="nome">Combo Cuide-se Bem Feira Cuidados Faciais: Gel de Limpeza Tangerina 150g + Hidratante Cremoso Banana 80g + Máscara Facial Noturna Melancia 50g</li>
+        <li class="nome">
+          Combo Cuide-se Bem Feira Cuidados Faciais: Gel de Limpeza Tangerina 150g + Hidratante Cremoso Banana 80g + Máscara Facial Noturna Melancia 50g</li>
 
-        <li class="descricao">Com Cuide-se Bem Feira, a feira é diferente, está em toda parte, vai com você aonde você for, no dia e na hora que você quiser! O Combo Cuide-se Bem Feira Cuidados Faciais proporciona uma mistura de frutas tropicais para um skincare com diferentes fragrâncias, texturas e novas maneiras de se amar.</li>
-
-      </ul>
-
-        <ul class="precoImagem">
-
-          <li class="preco">R$111,90<br>ou 3x de R$37,30</li>
-
-          <li><img src="/images/sugestao.png" alt=""></li>
+        <li class="descricao"><p>Com Cuide-se Bem Feira, a feira é diferente, está em toda parte, vai com você aonde você for, no dia e na hora que você quiser!<br> O Combo Cuide-se Bem Feira Cuidados Faciais proporciona uma mistura de frutas tropicais para um skincare com diferentes fragrâncias, texturas e novas maneiras de se amar.</p></li>
 
         </ul>
+
+        <div>
+
+             <p class="preco">R$111,90</p>
+
+             <p><img src="/images/sugestao.png" alt=""></p>
+
+        </div>
 
     </section>
 
@@ -70,6 +71,38 @@ main section ul li.nome{
 
 font-size: xx-large;
 margin: 3vw 9vw 3vw 2vw;
+
+}
+
+main section.sugestao div p.preco{
+
+font-size: 2.5rem;
+margin: 28vw 0 16vw 13vw;
+border: 5px solid rgb(209, 186, 255);
+background-color: rgb(209, 186, 255);
+padding: 2px;
+
+}
+
+main section.sugestao div p.{
+
+margin: 0 15vw 0 0;
+
+}
+
+main section div{
+
+justify-content: space-between;
+width: 93%;
+display: flex;
+
+}
+
+main section ul li.descricao{
+
+font-size: 1.2vw;
+color: rgb(80, 80, 80);
+margin: 0 0 0.2vw 1vw;
 
 }
 
