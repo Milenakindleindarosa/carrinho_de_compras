@@ -2,16 +2,105 @@
 
 import { ref, computed } from "vue";
 
-const carrinho = 
+function incrementar() 
 {
-  itens: 
+  
+}
+
+function decrementar ()
+{
+
+}
+
+function totalCompra()
+{
+
+}
+
+const produtos = ref 
+(
   [
     {
       id: 1,
       nome: 'Combo Bubbaloo Morango',
-    }
+      resumo: 'Gloss 5 ml + Loção Hidratante Desodorante Corporal 200ml',
+      resenha: 'O Combo Bubbaloo Morango traz dois itens essenciais em nosso momento de autocuidado diário: Um hidratante com fragrância irresistível para cuidar da pele e um gloss com textura deliciosa. Essa dupla vem com o Cheirinho de Bubbaloo Morango.',
+      preco: 100.80,
+      img: 'https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_800/v1/imagens/products/B2022081209/B2022081209_CBEM_BUBBALOO-MOR_HID_CPO_200ML_GLOSS.jpg',
+    },
+    {
+      id: 2,
+      nome: 'Combo Cereja Livre',
+      resumo: 'Body Splash 200ml + Loção Corporal 400ml',
+      resenha: ' Com o Combo Cuide-se Bem Cereja Livre, você terá uma experiência única de cuidado e beleza com a fragrância suave e deliciosa da cereja. Ele combina produtos que proporcionam hidratação, frescor e uma sensação de leveza.',
+      preco: 154.80,
+      img: 'https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_800/v1/imagens/product/B2025030422/32f7ad61-6a27-4f40-8145-a72de53a83df-bot-2025030422.jpg',
+    },
+    {
+      id: 3,
+      nome: 'Creme Desodorante Hidratante Corporal',
+      resumo: 'Liz 100ml',
+      resenha: 'O Creme Desodorante Hidratante Corporal Liz é o item para pele que completa sua rotina ou ocasião especial. Trazendo todo cuidado que seu corpo precisa e potencializa a fragrância feminina e leve de Liz com hidratação indescritível.',
+      preco: 35.90,
+      img: 'https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_800/v1/imagens/product/B52723/11613660-b4d4-4f18-bada-80d29fba7593-bot-52723-liz-creme-hidratante-frontal-1.jpg',
+    },
+    {
+      id: 4,
+      nome: 'Loção Desodorante Hidratante Corporal',
+      resumo: 'Cuide-se Bem Boa Noite 200ml',
+      resenha: 'A Loção Desodorante Hidratante Corporal Cuide-se Bem Boa Noite é ideal para complementar a sua rotina de cuidados pessoais e te preparar para uma noite de sono tranquila. Afinal, ter um sono relaxante faz toda a diferença para cuidar do corpo e da mente.',
+      preco: 49.90,
+      img: 'https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_800/v1/imagens/products/B82034/82034.jpg',
+    },
+    {
+      id: 5,
+      nome: 'Combo Cuide-se Bem Feira Cuidados Faciais',
+      resumo: 'Gel de Limpeza Tangerina 150g + Hidratante Cremoso Banana 80g + Máscara Facial Noturna Melancia 50g',
+      resenha: 'Com Cuide-se Bem Feira, a feira é diferente, está em toda parte, vai com você aonde você for, no dia e na hora que você quiser! O Combo Cuide-se Bem Feira Cuidados Faciais proporciona uma mistura de frutas tropicais para um skincare com diferentes fragrâncias, texturas e novas maneiras de se amar.',
+      preco: 111.90,
+      img: 'https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_1800,c_limit/e_trim/v1/imagens/product/B2024010205/1d1b5157-820c-4140-bd79-b9bbb7318c76-bot-2024010205-cuide-se-bem-feira-tangerina-gel-limpeza-facial-melancia-mascara-noturna-banana-creme-facial.jpg',
+    },
+    {
+      id: 6,
+      nome: 'Desodorante Colônia',
+      resumo: 'Glamour Secrets Black 75ml',
+      resenha: 'Combinando diferentes flores, como a Flor de Tiaré, e frutas vermelhas, como a Framboesa, Glamour Secrets Black Desodorante Colônia traz um leve toque de Baunilha impossível de se resistir.',
+      preco: 174.90,
+      img: 'https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_800/v1/imagens/products/B74103/GLAMOUR-DES-COL-SEC-BL-75ml-V4_B74103_frontal.jpg',
+    },
+    {
+      id: 7,
+      nome: 'Combo Boti Baby Lua',
+      resumo: 'Colônia Para Bebê 100ml + Loção Corporal Banho e Pós-Banho 200ml',
+      resenha: 'Criar um ritual de cuidados noturno para o seu bebê é essencial para uma noite de sono tranquila e reparadora. Com o Combo Boti Baby Lua, você proporciona um momento de carinho e relaxamento, além de um cheirinho delicioso que acalma e aconchega.',
+      preco: 154.80,
+      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4kwVklJr4na3vh4jO8G-sqk7DcyNOxQiWlg&s',
+    },
   ]
+)
+
+
+const carrinho = ref
+(
+  {
+    itens: 
+    [
+      {
+        id: 4,
+        nome: 'Loção Desodorante Hidratante Corporal',
+        resumo: 'Cuide-se Bem Boa Noite 200ml',
+        resenha: 'A Loção Desodorante Hidratante Corporal Cuide-se Bem Boa Noite é ideal para complementar a sua rotina de cuidados pessoais e te preparar para uma noite de sono tranquila. Afinal, ter um sono relaxante faz toda a diferença para cuidar do corpo e da mente.',
+        preco: 49.90,
+        img: 'https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_800/v1/imagens/products/B82034/82034.jpg',
+      },
+    ],
+    frete: 0,
+    desconto: 0,
 }
+)
+
+
+let idSugestao = Math.random(1, 7);
 
 </script>
 
@@ -71,6 +160,63 @@ const carrinho =
 
     </div>
   </header>
+
+  <main>
+
+    <section class="carrinho">
+
+      <h1>
+        Carrinho
+      </h1>
+
+      <div>
+        <ul>
+          <li>
+            Nome do Produto
+          </li>
+          <li>
+            Quantidade
+          </li>
+          <li>
+            Subtotal
+          </li>
+        </ul>
+      </div>
+      <button>
+        Voltar para loja
+      </button>
+      
+      <div>
+        <div>
+          <form action="">
+            <p>
+              <input type="text" v-model="input" placeholder="Código do Cupom"/>
+              <button>
+              Inserir Cupom
+              </button>
+            </p> 
+          </form>
+        </div>
+      <div>
+        <h2>
+          Total da Compra
+        </h2>
+        <ul>
+          <li>
+            Produtos:
+          </li>
+          <li>
+            R$
+          </li>
+        </ul>
+        <ul>
+
+        </ul>
+      </div>
+    </div>
+
+    </section>
+  </main>
   
 </template>
 
