@@ -218,28 +218,32 @@ let idSugestao = Math.random(1, 7);
 
   <main>
 
-    <section>
+    <section class="lancamentos">
       <h1>
         Lançamentos
       </h1>
-      <div v-for="(produto, index) in produtos" :key="produto.id">
-           <img :src="produto.img" :alt="produto.nome" width="100">
-           <h2>
-            {{ produto.nome }}
-           </h2>
-           <p>
-            {{ produto.resumo }}
-           </p>
-           <p>
-            <span>R$</span> {{ produto.preco.toFixed(2).replace(".",",") }}
-           </p>
-           <p>
-            <span class="fa-solid fa-heart"></span>
-           </p>
-           <p @click="adicionarCarrinho(produto, index)">
-            <span class="fa-solid fa-cart-shopping"></span> Comprar
-           </p>
-         </div>
+      <div class="produtos">
+        <div v-for="(produto, index) in produtos" :key="produto.id">
+            <img :src="produto.img" :alt="produto.nome" width="100">
+            <h2>
+              {{ produto.nome }}
+            </h2>
+            <p>
+              {{ produto.resumo }}
+            </p>
+            <div>
+              <p>
+                <span>R$</span>{{ produto.preco.toFixed(2).replace(".",",") }}
+              </p>
+              <p class="coracao">
+                <span class="fa-regular fa-heart"></span>
+              </p>
+            </div>
+            <p @click="adicionarCarrinho(produto, index)" class="botao">
+              <span class="fa-solid fa-cart-shopping"></span> Comprar
+            </p>
+        </div>
+      </div>
 
     </section>
 
@@ -249,19 +253,19 @@ let idSugestao = Math.random(1, 7);
         Carrinho
       </h1>
 
-      <div>
-        <p>
+      <div class="titulo">
+        <h2>
           Nome do Produto
-        </p>
-        <p>
+        </h2>
+        <h2>
           Quantidade
-        </p>
-        <p>
+        </h2>
+        <h2>
           Subtotal
-        </p>
+        </h2>
       </div>
-      <div v-for="(compra, index) in carrinho.itens">
-        <div>
+      <div v-for="(compra, index) in carrinho.itens" class="compra">
+        <div class="itens">
           <img :src="compra.img" :alt="compra.nome" width="100">
           <div>
             <h2>
@@ -275,12 +279,14 @@ let idSugestao = Math.random(1, 7);
            </p>
           </div>
         </div>
-        <div>
-          <button @click="incrementar(compra, index)">+</button>
-          <p>{{ compra.quantidade }}</p>
-          <button @click="decrementar(compra, index)">-</button>
+        <div class="contador">
+          <p>
+            <button @click="incrementar(compra, index)">+</button>
+            {{ compra.quantidade }}
+            <button @click="decrementar(compra, index)">-</button>
+          </p>
         </div>
-        <div>
+        <div class="total">
           <p>
             <span>R$</span> {{ compra.valorTotal.toFixed(2).replace(".",",") }}
           </p>

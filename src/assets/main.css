@@ -131,3 +131,51 @@ section.lancamentos div.produtos div p.botao
     text-align: center;
     border-radius: 3px;
 }
+
+/*---------------------------------
+        Section - Carrinho
+---------------------------------*/
+
+section.carrinho h1
+{
+    font-size: 2rem;
+    color: rgb(110, 38, 255);
+}
+
+section.carrinho div.titulo
+{
+    border-bottom: 2px solid rgb(209, 186, 255);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1vw 0 1vw;
+}
+
+section.carrinho div.titulo h2
+{
+    margin: 1vw 3vw;
+    font-size: 1.5rem;
+}
+
+section.carrinho div.compra
+{
+    border-bottom: 2px solid rgb(170, 170, 170);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1vw 0 1vw;
+}
+
+section.carrinho div.compra div.itens
+{
+    margin: 1vw 1vw 1vw 3vw;
+}
+
+section.carrinho div.compra div.contador
+{
+    justify-content: center;
+    display: inline-block;
+}
+
+section.carrinho div.compra div.total
+{
+    margin: 1vw 3vw 1vw 1vw;
+}
