@@ -51,6 +51,24 @@ import { ref, computed } from "vue";
 
   </main>
   
+<section class="footer">
+
+<footer>
+
+<ul>
+
+<li class="titulo">Contato</li>
+
+<li>Seg. à sex., 8h às 20h - Sáb., 9h às 18h</li>
+
+<li>41 3406-8393</li>
+
+</ul>
+
+</footer>
+
+</section>
+
 </template>
 
 <style src="./assets/reset.css"></style>
@@ -109,6 +127,12 @@ margin: 0 0 0.7vw 1vw;
 main section.sugestao div p.imagem img{
 
   margin: 5vw 0 12vw 20vw;
+
+}
+
+section.footer footer{
+
+background-color: rgb(209, 186, 255);;
 
 }
 
