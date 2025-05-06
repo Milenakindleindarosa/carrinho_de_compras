@@ -43,7 +43,7 @@ import { ref, computed } from "vue";
 
              <p class="preco">R$111,90</p>
 
-             <p><img src="/images/sugestao.png" alt=""></p>
+             <p class="imagem"><img src="/images/sugestao.png" alt=""></p>
 
         </div>
 
@@ -62,7 +62,7 @@ main section h2.sugestaoProduto{
 background-color: rgb(209, 186, 255);
 padding: 15px;
 margin: 5vw 82vw 0 4vw;
-font-size: 1.5rem;
+font-size: 1.6rem;
 text-align: center;
 
 }
@@ -76,15 +76,15 @@ margin: 3vw 9vw 3vw 2vw;
 
 main section.sugestao div p.preco{
 
-font-size: 2.5rem;
-margin: 28vw 0 16vw 13vw;
+font-size: 3rem;
+margin: 23vw 0 16vw 13vw;
 border: 5px solid rgb(209, 186, 255);
 background-color: rgb(209, 186, 255);
 padding: 2px;
 
 }
 
-main section.sugestao div p.{
+main section.sugestao div p{
 
 margin: 0 15vw 0 0;
 
@@ -102,7 +102,13 @@ main section ul li.descricao{
 
 font-size: 1.2vw;
 color: rgb(80, 80, 80);
-margin: 0 0 0.2vw 1vw;
+margin: 0 0 0.7vw 1vw;
+
+}
+
+main section.sugestao div p.imagem img{
+
+  margin: 5vw 0 12vw 20vw;
 
 }
 
