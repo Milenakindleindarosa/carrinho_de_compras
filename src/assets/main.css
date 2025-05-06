@@ -60,3 +60,69 @@ header div ul.icones
     padding-top: 25px;
     font-size: 1.5rem;
 }
+
+/*---------------------------------
+     Section - Lançamentos
+---------------------------------*/
+
+section.lancamentos h1
+{
+    font-size: 2rem;
+}
+
+section.lancamentos div.produtos
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.lancamentos div.produtos div
+{
+    width: 10%;
+}
+
+section.lancamentos div.produtos div img
+{
+    width: 100%;
+    padding: 4px 0 4px 0;
+}
+
+section.lancamentos div.produtos div h2
+{
+    font-size: 1.5rem;
+    padding: 4px 0 4px 0;
+}
+
+section.lancamentos div.produtos div p
+{
+    font-size: 1rem;
+    color: grey;
+    padding: 4px 0 4px 0;
+}
+
+section.lancamentos div.produtos div div
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0 4px 0;
+}
+
+section.lancamentos div.produtos div div p
+{
+    color: black;
+}
+
+section.lancamentos div.produtos div div p.coracao
+{
+    color: rgb(209, 186, 255);
+}
+
+section.lancamentos div.produtos div p.botao
+{
+    padding: 8px 0 8px 0;
+    color: black;
+    background-color: rgb(209, 186, 255);
+    text-align: center;
+    border-radius: 3px;
+}
