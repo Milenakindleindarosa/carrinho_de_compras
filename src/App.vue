@@ -60,6 +60,33 @@ import { ref, computed } from "vue";
 
     </div>
   </header>
+  <main>
+
+    <section class="lançamentos">
+      <h1>
+        Lançamentos
+      </h1>
+      <div v-for="(produto, index) in produtos" :key="produto.id">
+           <img :src="produto.img" :alt="produto.nome" width="100">
+           <h2>
+            {{ produto.nome }}
+           </h2>
+           <p>
+            {{ produto.resumo }}
+           </p>
+           <p>
+            <span>R$</span> {{ produto.preco.toFixed(2).replace(".",",") }}
+           </p>
+           <p>
+            <span class="fa-solid fa-heart"></span>
+           </p>
+           <p @click="adicionarCarrinho(produto, index)">
+            <span class="fa-solid fa-cart-shopping"></span> Comprar
+           </p>
+         </div>
+
+    </section>
+  </main>
   
 </template>
 
