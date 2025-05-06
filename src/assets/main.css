@@ -1,12 +1,17 @@
 /*---------------------------------
               Header
 ---------------------------------*/
+header
+{
+    background: #D1BAFF;
+    background: linear-gradient(90deg,rgba(209, 186, 255, 1) 26%, rgba(110, 38, 255, 1) 90%);
+}
 
 header div
 {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(209, 186, 255);
+
     padding: 1.15vw 1.25vw;
 }
 
