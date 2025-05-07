@@ -7,20 +7,57 @@ import { ref, computed } from "vue";
 
 
 <template>
-
   <header>
-    <div>
+    <div >
+
       <img src="https://res.cloudinary.com/beleza-na-web/image/upload/f_svg,fl_progressive,q_auto:eco/v1/blz/assets-store/0.0.505/images/store/47/logo.svg" alt="Logo-oBoticário">
+
       <div>
         <form action="">
 
           <p>
-            <textarea name="pesquisa" id="pesquisar">Pesquisar</textarea>
-            <input type="submit" value="">
-          </p>
-          
+            <input type="text" v-model="input" placeholder="Pesquisar..."/>
+            <button>
+              <span class="fa-solid fa-magnifying-glass" ></span>
+            </button>
+          </p> 
+
         </form>
       </div>
+
+      <ul class="links">
+        <li>
+          <a href="">Termos</a>
+        </li>
+        <li>
+          <a href="">Equipe</a>
+        </li>
+        <li>
+          <a href="">Envio</a>
+        </li>
+        <li>
+          <a href="">Devoluções</a>
+        </li>
+      </ul>
+
+      <ul class="icones">
+        <li @click="abrirCarrinho">
+          <p>
+            <span class="fa-solid fa-cart-shopping"></span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span class="fa-solid fa-heart"></span>
+          </p>
+        </li>
+        <li>
+          <p>
+            <span class="fa-solid fa-user"></span>
+          </p>
+        </li>
+      </ul>
+
     </div>
   </header>
 
@@ -33,9 +70,12 @@ import { ref, computed } from "vue";
       <ul>
 
         <li class="nome">
-          Combo Cuide-se Bem Feira Cuidados Faciais: Gel de Limpeza Tangerina 150g + Hidratante Cremoso Banana 80g + Máscara Facial Noturna Melancia 50g</li>
+          Combo Cuide-se Bem Feira Cuidados Faciais: Gel de Limpeza Tangerina 150g + Hidratante Cremoso Banana 80g + Máscara Facial Noturna Melancia 50g
+        </li>
 
-        <li class="descricao"><p>Com Cuide-se Bem Feira, a feira é diferente, está em toda parte, vai com você aonde você for, no dia e na hora que você quiser!<br> O Combo Cuide-se Bem Feira Cuidados Faciais proporciona uma mistura de frutas tropicais para um skincare com diferentes fragrâncias, texturas e novas maneiras de se amar.</p></li>
+        <li class="descricao">
+        Com Cuide-se Bem Feira, a feira é diferente, está em toda parte, vai com você aonde você for, no dia e na hora que você quiser!<br> O Combo Cuide-se Bem Feira Cuidados Faciais proporciona uma mistura de frutas tropicais para um skincare com diferentes fragrâncias, texturas e novas maneiras de se amar.
+        </li>
 
         </ul>
 
@@ -53,7 +93,8 @@ import { ref, computed } from "vue";
 
 </template>
 
-<style src="./assets/reset.css"></style>
+<style src="./assets/reset.css">
+</style>
 
 <style scoped>
 

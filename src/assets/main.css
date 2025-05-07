@@ -1,47 +1,109 @@
 /*---------------------------------
+              Header
+---------------------------------*/
+
+header div
+{
+   display: flex;
+   justify-content: space-between;
+   background-color: rgb(209, 186, 255);
+   padding: 1.15vw 1.25vw;
+}
+
+
+header div div form
+{
+   position: relative;
+   width: 250px;
+}
+
+header div div form p input
+{
+   width: 100%;
+   font-size: 1.6rem;
+   border: none;
+   border-radius: 14px;
+   padding: 0 0 0 13px;
+}
+
+header div div form p button
+{
+   position: absolute;
+   top: 0; right: 0;
+   font-size: 1.5rem;
+   border: none;
+   background: transparent;
+   outline: none;
+}
+
+header div div form p button span
+{
+   color: gray;
+}
+
+header div ul.links
+{
+   width: 30%;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 25px;
+   font-size: 1.5rem;
+}
+
+header div ul.icones
+{
+   width: 10%;
+   display: flex;
+   justify-content: space-between;
+   padding: 0 15px 0 0;
+   padding-top: 25px;
+   font-size: 1.5rem;
+}
+
+/*---------------------------------
         Section - Sugestao
 ---------------------------------*/
 section h2.sugestaoProduto
 {
-background-color: rgb(209, 186, 255);
-padding: 15px;
-margin: 5vw 82vw 0 4vw;
-font-size: 1.6rem;
-text-align: center;
+  background-color: rgb(209, 186, 255);
+  padding: 15px;
+  margin: 5vw 82vw 0 4vw;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 section ul li.nome
 {
-font-size: xx-large;
-margin: 3vw 9vw 3vw 2vw;
+  font-size: xx-large;
+  margin: 3vw 9vw 3vw 2vw;
 }
 
 main section.sugestao div p.preco
 {
-font-size: 3rem;
-margin: 23vw 0 16vw 13vw;
-border: 5px solid rgb(209, 186, 255);
-background-color: rgb(209, 186, 255);
-padding: 2px;
+  font-size: 3rem;
+  margin: 23vw 0 16vw 13vw;
+  border: 5px solid rgb(209, 186, 255);
+  background-color: rgb(209, 186, 255);
+  padding: 2px;
 }
 
 main section.sugestao div p
 {
-margin: 0 15vw 0 0;
+  margin: 0 15vw 0 0;
 }
 
 main section div
 {
-justify-content: space-between;
-width: 93%;
-display: flex;
+  justify-content: space-between;
+  width: 93%;
+  display: flex;
 }
 
 main section ul li.descricao
 {
-font-size: 1.2vw;
-color: rgb(80, 80, 80);
-margin: 0 0 0.7vw 1vw;
+  font-size: 1.2vw;
+  color: rgb(80, 80, 80);
+  margin: 0 0 0.7vw 1vw;
 }
 
 main section.sugestao div p.imagem img
