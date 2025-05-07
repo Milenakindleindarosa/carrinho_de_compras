@@ -154,6 +154,7 @@ const carrinho = ref
 }
 )
 
+let abrirCarrinho = ref(false)
 
 let idSugestao = Math.random(1, 7);
 
@@ -196,7 +197,7 @@ let idSugestao = Math.random(1, 7);
       </ul>
 
       <ul class="icones">
-        <li @click="abrirCarrinho">
+        <li @click="abrirCarrinho = !abrirCarrinho">
           <p>
             <span class="fa-solid fa-cart-shopping"></span>
           </p>
@@ -218,7 +219,7 @@ let idSugestao = Math.random(1, 7);
 
   <main>
 
-    <section class="lancamentos">
+    <section class="lancamentos" >
       <h1>
         Lançamentos
       </h1>
@@ -247,7 +248,7 @@ let idSugestao = Math.random(1, 7);
 
     </section>
 
-    <section class="carrinho">
+    <section class="carrinho" v-if="abrirCarrinho">
 
       <h1>
         Carrinho
