@@ -2,23 +2,23 @@
 
 import { ref, computed } from "vue";
 
-function incrementar(compra, carrinho) 
+function incrementar(compra, itens, index, carrinho) 
 {
   compra.quantidade++
-  carrinho.totalCompra = 0
-  for (let item of carrinho.itens) 
-  {
-    item.valorTotal = item.preco * item.quantidade;
-    carrinho.totalCompra = totalCompra + item.valorTota;
-  }
+  compra.valorTotal = compra.quantidade * compra.preco
 }
 
-function decrementar(compra, carrinho)
+function decrementar(compra, itens, index, carrinho)
 {
   compra.quantidade--
+
   if (compra.quantidade === 0) 
   {
-    itens.splice(index, 1)
+    compra.valorTotal = 0;
+  }
+  else
+  {
+    compra.valorTotal = compra.quantidade * compra.preco;
   }
 }
 
@@ -218,36 +218,6 @@ let idSugestao = Math.random(1, 7);
   </header>
 
   <main>
-
-    <section class="lancamentos" >
-      <h1>
-        Lançamentos
-      </h1>
-      <div class="produtos">
-        <div v-for="(produto, index) in produtos" :key="produto.id">
-            <img :src="produto.img" :alt="produto.nome" width="100">
-            <h2>
-              {{ produto.nome }}
-            </h2>
-            <p>
-              {{ produto.resumo }}
-            </p>
-            <div>
-              <p>
-                <span>R$</span>{{ produto.preco.toFixed(2).replace(".",",") }}
-              </p>
-              <p class="coracao">
-                <span class="fa-regular fa-heart"></span>
-              </p>
-            </div>
-            <p @click="adicionarCarrinho(produto, index)" class="botao">
-              <span class="fa-solid fa-cart-shopping"></span> Comprar
-            </p>
-        </div>
-      </div>
-
-    </section>
-
     <section class="carrinho" v-if="abrirCarrinho">
 
       <h1>
@@ -265,26 +235,26 @@ let idSugestao = Math.random(1, 7);
           Subtotal
         </h2>
       </div>
-      <div v-for="(compra, index) in carrinho.itens" class="compra">
+      <div v-for="(compra, index, itens, carrinho) in carrinho.itens" class="compra">
         <div class="itens">
           <img :src="compra.img" :alt="compra.nome" width="100">
           <div>
             <h2>
             {{ compra.nome }}
-           </h2>
-           <p>
+          </h2>
+          <p class="texto">
             {{ compra.resumo }}
-           </p>
-           <p>
-            <span>R$</span> {{ compra.preco.toFixed(2).replace(".",",") }}
-           </p>
+          </p>
+          <p>
+            <span>R$</span> {{ compra.preco.toFixed(2).replace(".",",")}}
+          </p>
           </div>
         </div>
         <div class="contador">
           <p>
-            <button @click="incrementar(compra, index)">+</button>
+            <button @click="incrementar(compra, index, itens, carrinho)">+</button>
             {{ compra.quantidade }}
-            <button @click="decrementar(compra, index)">-</button>
+            <button @click="decrementar(compra, index, itens, carrinho)">-</button>
           </p>
         </div>
         <div class="total">
@@ -293,10 +263,10 @@ let idSugestao = Math.random(1, 7);
           </p>
         </div>
       </div>
-      <button>
+      <button class="voltar" @click="abrirCarrinho = !abrirCarrinho">
         Voltar para loja
       </button>
-      
+
       <div>
         <div>
           <form action="">
@@ -340,9 +310,39 @@ let idSugestao = Math.random(1, 7);
           Ir para o pagamento
         </button>
       </div>
-    </div>
-
+      </div>
     </section>
+
+    <section v-else>
+      <section class="lancamentos" >
+        <h1>
+          Lançamentos
+        </h1>
+        <div class="produtos">
+          <div v-for="(produto, index) in produtos" :key="produto.id">
+              <img :src="produto.img" :alt="produto.nome" width="100">
+              <h2>
+                {{ produto.nome }}
+              </h2>
+              <p>
+                {{ produto.resumo }}
+              </p>
+              <div>
+                <p>
+                  <span>R$</span>{{ produto.preco.toFixed(2).replace(".",",") }}
+                </p>
+                <p class="coracao">
+                  <span class="fa-regular fa-heart"></span>
+                </p>
+              </div>
+              <p @click="adicionarCarrinho(produto, index)" class="botao">
+                <span class="fa-solid fa-cart-shopping"></span> Comprar
+              </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
   </main>
   
 </template>
