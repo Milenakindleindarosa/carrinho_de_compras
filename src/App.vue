@@ -65,9 +65,9 @@ import { ref, computed } from "vue";
 
 <ul class="contato">
 
-<li>Contato: 41 3406-8393</li>
+<li class="telefone">Contato: 41 3406-8393</li>
 
-<li>Seg. à sex., 8h às 20h - Sáb., 9h às 18h</li>
+<li>Segunda à sexta, 8h às 20h - Sábado, 9h às 18h</li>
 
 </ul>
 
@@ -96,6 +96,13 @@ import { ref, computed } from "vue";
 <li><i class="fa-brands fa-pix"></i></li>
 
 </ul>
+
+<div>
+
+<p>Alguns direitos reservados &copy;<br>OBoticário 2025.</p>
+
+
+</div>
 
 </footer>
 
