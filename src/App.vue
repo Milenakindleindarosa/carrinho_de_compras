@@ -89,6 +89,20 @@ import { ref, computed } from "vue";
 
     </section>
 
+    <section class="outrasPaginas">
+
+<ul>
+
+<li><span class="fa-solid fa-truck"></span><a href="">Frete grátis para SC!</a></li>
+
+<li><span class="fa-solid fa-lightbulb"></span><a href="">Produtos recomendados</a></li>
+
+<li><span class="fa-solid fa-dollar-sign"></span><a href="">Mais vendidos</a></li>
+
+</ul>
+
+    </section>
+
   </main>
 
 </template>
