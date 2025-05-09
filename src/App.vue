@@ -215,7 +215,7 @@ let idSugestao = Math.random(1, 7);
 
     </div>
   </header>
-
+  
   <main>
 
     <section class="sugestao">
@@ -288,6 +288,50 @@ let idSugestao = Math.random(1, 7);
     </section>
 
   </main>
+  
+ <footer>
+
+  <ul class="contato">
+
+    <li class="telefone">Contato: 41 3406-8393</li>
+
+    <li>Segunda à sexta, 8h às 20h - Sábado, 9h às 18h</li>
+
+  </ul>
+
+  <ul class="icones">
+
+    <li><i class="fa-brands fa-square-facebook"></i></li>
+
+    <li><i class="fa-brands fa-square-instagram"></i></li>
+
+    <li><i class="fa-brands fa-square-twitter"></i></li>
+
+    <li><i class="fa-brands fa-square-youtube"></i></li>
+
+    <li><i class="fa-brands fa-square-whatsapp"></i></li>
+
+    <li><i class="fa-solid fa-square-phone"></i></li>
+
+  </ul>
+
+  <ul class="cartoes">
+
+    <li><i class="fa-brands fa-cc-visa"></i></li>
+
+    <li><i class="fa-brands fa-cc-mastercard"></i></li>
+
+    <li><i class="fa-brands fa-pix"></i></li>
+
+  </ul>
+
+  <div>
+
+    <p>Alguns direitos reservados &copy;<br>OBoticário 2025.</p>
+
+  </div>
+
+</footer>
   
 </template>
 

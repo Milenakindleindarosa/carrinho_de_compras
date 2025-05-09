@@ -208,3 +208,61 @@ section.lancamentos div.produtos div p.botao
     text-align: center;
     border-radius: 3px;
 }
+  
+/*---------------------------------
+              Footer
+---------------------------------*/
+
+footer
+{
+background-color: rgb(209, 186, 255);;
+}
+
+footer ul li a
+{
+    color: black;
+}
+
+footer ul.icones
+{
+justify-content: center;
+display: flex;
+}
+
+footer ul.cartoes
+{
+justify-content: center;
+display: flex;
+font-size: 1.7rem;
+}
+
+footer ul.icones li
+{
+margin: 0 3.5px 8px 3.5px;
+font-size: 1.9rem;
+}
+
+footer ul.cartoes li
+{
+margin: 0 3.5px 0 4.8px;
+}
+
+footer ul.contato
+{
+font-size: 1.6rem;
+margin: 0vw 0 2.5vw 0;
+text-align: center;
+padding: 2vw 0 0 0;
+}
+
+footer ul.contato li.telefone
+{
+margin: 0 0 10px 0;
+}
+
+footer div
+{
+font-size: 24px;
+margin: 0 3vw 0 4vw;
+padding: 0 0 1.1vw 0;
+ }
