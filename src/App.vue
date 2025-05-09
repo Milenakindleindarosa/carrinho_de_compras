@@ -215,8 +215,49 @@ let idSugestao = Math.random(1, 7);
 
     </div>
   </header>
+
   <main>
 
+    <section class="sugestao">
+
+     <h2 class="sugestaoProduto">Sugestão de produto</h2>
+
+      <ul>
+
+        <li class="nome">
+          Combo Cuide-se Bem Feira Cuidados Faciais: Gel de Limpeza Tangerina 150g + Hidratante Cremoso Banana 80g + Máscara Facial Noturna Melancia 50g
+        </li>
+
+        <li class="descricao">
+        Com Cuide-se Bem Feira, a feira é diferente, está em toda parte, vai com você aonde você for, no dia e na hora que você quiser!<br> O Combo Cuide-se Bem Feira Cuidados Faciais proporciona uma mistura de frutas tropicais para um skincare com diferentes fragrâncias, texturas e novas maneiras de se amar.
+        </li>
+
+        </ul>
+
+        <div>
+
+             <p class="preco">R$111,90</p>
+
+             <p class="imagem"><img src="/images/sugestao.png" alt=""></p>
+
+        </div>
+
+    </section>
+
+    <section class="outrasPaginas">
+
+      <ul>
+
+        <li><span class="fa-solid fa-truck"></span><a href="">Frete grátis para SC!</a></li>
+
+        <li><span class="fa-solid fa-lightbulb"></span><a href="">Produtos recomendados</a></li>
+
+        <li><span class="fa-solid fa-dollar-sign"></span><a href="">Mais vendidos</a></li>
+
+      </ul>
+
+    </section>
+    
     <section class="lancamentos">
       <h1>
         Lançamentos
@@ -245,6 +286,7 @@ let idSugestao = Math.random(1, 7);
       </div>
 
     </section>
+
   </main>
   
 </template>
