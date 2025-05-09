@@ -6,25 +6,31 @@ function incrementar(compra, itens, index, carrinho)
 {
   compra.quantidade++
   compra.valorTotal = compra.quantidade * compra.preco
+  total(itens, carrinho)
 }
 
 function decrementar(compra, itens, index, carrinho)
 {
   compra.quantidade--
 
+  let indice = carrinho.itens.indexOf(compra);
+  console.log(indice);
+
   if (compra.quantidade === 0) 
   {
-    compra.valorTotal = 0;
+    carrinho.itens.splice(indice, 1);
   }
   else
   {
     compra.valorTotal = compra.quantidade * compra.preco;
   }
+  total(itens, carrinho)
 }
 
-function adicionarCarrinho(produto, carrinho)
+function adicionarCarrinho(produto, carrinho, itens, index)
 {
-  let novoItem = ref 
+  let novoItem = 
+  ref 
     (
       [
         {
@@ -44,29 +50,32 @@ function adicionarCarrinho(produto, carrinho)
   novoItem.resumo = produto.resumo;
   novoItem.preco = produto.preco;
   novoItem.img = produto.img;
-  novoItem.valorTotal = produto.preco * produto.quantidade;
+  novoItem.quantidade = 1;
+  novoItem.valorTotal = produto.preco;
 
-  for (let categoria of carrinhos.itens) 
+  console.log(novoItem)
+
+  for (let categoria of carrinho.itens) 
   {
-    categoria.valorTotal = categoria.quantidade * categoria.preco;
-    if (categoria.id === produto.id)
+    if (categoria.id === novoItem.id)
     {
       categoria.quantidade++
-      break;
+      total(itens, carrinho);
+      return;
     }
   }
-  itens.push(novoItem)
 
-  total();
+  carrinho.itens.push(novoItem);
+
+  total(itens, carrinho);
 }
 
-function total()
+function total(itens, carrinho)
 {
-  carrinho.totalCompra = 0
+  carrinho.totalCompra = 0;
   for (let item of carrinho.itens) 
   {
-    item.valorTotal = item.preco * item.quantidade
-    carrinho.totalCompra = totalCompra + item.valorTotal
+    carrinho.totalCompra = carrinho.totalCompra + item.valorTotal
   }
 }
 
@@ -150,7 +159,7 @@ const carrinho = ref
     ],
     frete: 0,
     desconto: 0,
-    totalCompra: 0,
+    totalCompra: 49.90,
 }
 )
 
@@ -199,7 +208,7 @@ let idSugestao = Math.random(1, 7);
       <ul class="icones">
         <li @click="abrirCarrinho = !abrirCarrinho">
           <p>
-            <span class="fa-solid fa-cart-shopping"></span>
+            <span class="fa-solid fa-cart-shopping"> {{ carrinho.itens.length }}</span>
           </p>
         </li>
         <li>
@@ -235,12 +244,12 @@ let idSugestao = Math.random(1, 7);
           Subtotal
         </h2>
       </div>
-      <div v-for="(compra, index, itens, carrinho) in carrinho.itens" class="compra">
+      <div v-for="(compra, index) in carrinho.itens" class="compra">
         <div class="itens">
           <img :src="compra.img" :alt="compra.nome" width="100">
           <div>
             <h2>
-            {{ compra.nome }}
+            {{ compra.nome }} {{ index }}
           </h2>
           <p class="texto">
             {{ compra.resumo }}
@@ -254,7 +263,7 @@ let idSugestao = Math.random(1, 7);
           <p>
             <button @click="incrementar(compra, index, itens, carrinho)">+</button>
             {{ compra.quantidade }}
-            <button @click="decrementar(compra, index, itens, carrinho)">-</button>
+            <button @click="decrementar(compra, index, itens, carrinho, index)">-</button>
           </p>
         </div>
         <div class="total">
@@ -287,7 +296,7 @@ let idSugestao = Math.random(1, 7);
             Produtos:
           </li>
           <li>
-            <span>R$</span> {{ totalCompra }}
+            <span>R$</span> {{ carrinho.totalCompra.toFixed(2).replace(".",",") }}
           </li>
         </ul>
         <ul>
@@ -335,7 +344,7 @@ let idSugestao = Math.random(1, 7);
                   <span class="fa-regular fa-heart"></span>
                 </p>
               </div>
-              <p @click="adicionarCarrinho(produto, index)" class="botao">
+              <p @click="adicionarCarrinho(produto, carrinho, index, itens)" class="botao">
                 <span class="fa-solid fa-cart-shopping"></span> Comprar
               </p>
           </div>
