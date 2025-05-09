@@ -52,12 +52,12 @@ header div ul.links
 
 header div ul.icones
 {
-   width: 10%;
-   display: flex;
-   justify-content: space-between;
-   padding: 0 15px 0 0;
-   padding-top: 25px;
-   font-size: 1.5rem;
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 0 0;
+    padding-top: 25px;
+    font-size: 1.5rem;
 }
 
 /*---------------------------------
@@ -115,33 +115,96 @@ main section.sugestao div p.imagem img
         Outras Páginas
 ---------------------------------*/
 
-section.outrasPaginas ul{
+section.outrasPaginas ul
+{
 
 justify-content: center;
 display: flex;
 font-size: 1.8rem;
 padding: 5vw 3vw 5vw 1vw;
 border-top: 3px solid  rgb(209, 186, 255);
-
 }
 
-section.outrasPaginas ul li{
-
+section.outrasPaginas ul li
+{
 margin: 0 4vw 0vw 4vw;
 border-right: 1px solid rgb(80, 80, 80);
 padding: 0 8vw 0 0;
-
 }
 
-section.outrasPaginas ul li span{
-
+section.outrasPaginas ul li span
+{
 padding: 0 0.9vw 0 0.9vw;
-
 }
 
-section.outrasPaginas ul li:last-child{
-
+section.outrasPaginas ul li:last-child
+{
 padding: 0;
 border: none;
+}
 
+/*---------------------------------
+     Section - Lançamentos
+---------------------------------*/
+
+section.lancamentos h1
+{
+    font-size: 2rem;
+}
+
+section.lancamentos div.produtos
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.lancamentos div.produtos div
+{
+    width: 10%;
+}
+
+section.lancamentos div.produtos div img
+{
+    width: 100%;
+    padding: 4px 0 4px 0;
+}
+
+section.lancamentos div.produtos div h2
+{
+    font-size: 1.5rem;
+    padding: 4px 0 4px 0;
+}
+
+section.lancamentos div.produtos div p
+{
+    font-size: 1rem;
+    color: grey;
+    padding: 4px 0 4px 0;
+}
+
+section.lancamentos div.produtos div div
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0 4px 0;
+}
+
+section.lancamentos div.produtos div div p
+{
+    color: black;
+}
+
+section.lancamentos div.produtos div div p.coracao
+{
+    color: rgb(209, 186, 255);
+}
+
+section.lancamentos div.produtos div p.botao
+{
+    padding: 8px 0 8px 0;
+    color: black;
+    background-color: rgb(209, 186, 255);
+    text-align: center;
+    border-radius: 3px;
 }
