@@ -422,6 +422,16 @@ let abrirCarrinho = ref(false)
 
   </ul>
 
+  <ul class="desenvolvido">
+
+      <li>Desenvolvido por:</li>
+
+      <li>Ana Laura Simonato;</li>
+
+      <li>Milena Kindlein da Rosa</li>
+
+  </ul>
+
   <div>
 
     <p>Alguns direitos reservados &copy;<br>OBoticário 2025.</p>
@@ -429,6 +439,7 @@ let abrirCarrinho = ref(false)
   </div>
 
 </footer>
+</template>
 
 <style src="./assets/reset.css"></style>
 

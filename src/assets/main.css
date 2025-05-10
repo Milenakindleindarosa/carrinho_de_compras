@@ -101,30 +101,33 @@ section.carrinho div.compra
 {
     border-bottom: 2px solid rgb(170, 170, 170);
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     margin: 0 1vw 0 1vw;
 }
+
 
 section.carrinho div.compra div.itens
 {
     margin: 1vw 1vw 1vw 0;
-    width: 35%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 section.carrinho div.compra div.contador
 {
-    margin: 9vw 20vw 9vw 0;
+    width: 20%;
     border: 1px solid black;
     display: inline-block;
     text-align: center;
     font-size: 1.5rem;
+    margin: 0 0 0 5vw ;
 }
 
 section.carrinho div.compra div.total
 {
-    margin: 9vw 3vw 9vw 0;
+    justify-content: right;
+    margin: 0 3.25vw 0 0;
     font-size: 1.5rem;
 }
 
@@ -144,6 +147,7 @@ section.carrinho div.compra div.itens img
 section.carrinho div.compra div.itens div
 {
     margin: 6vw 0 6vw 0;
+    display: block;
 }
 
 section.carrinho div.compra div.itens div h2
@@ -174,7 +178,7 @@ section.carrinho div.pc
     margin: 2vw 2vw;
 }
 
-section.carrinho div div form p input
+section.carrinho div.pc div form p input
 {
     font-size: 1rem;
     padding: 0.5vw 1vw;
@@ -182,7 +186,7 @@ section.carrinho div div form p input
     border: 1px solid black;
 }
 
-section.carrinho div div form p button
+section.carrinho div.pc div form p button
 {
     font-size: 1rem;
     padding: 0.55vw 1vw;
@@ -192,28 +196,29 @@ section.carrinho div div form p button
     border-radius: 5px;
 }
 
-section.carrinho div div.pagamento
+section.carrinho div.pc div.pagamento
 {
     margin: 0 20vw;
     display: block;
     border: 2px solid black;
     padding: 1.5vw 1vw;
     border-radius: 5px;
-    width: 20%;
+    width: 60%;
+    text-align: center;
 }
 
-section.carrinho div div.pagamento h2
+section.carrinho div.pc div.pagamento h2
 {
     font-size: 1.5rem;
     margin: 0 0 1vw;
 }
 
-section.carrinho div div.pagamento ul.border
+section.carrinho div.pc div.pagamento ul.border
 {
     border: none;
 } 
 
-section.carrinho div div.pagamento ul
+section.carrinho div.pc div.pagamento ul
 {
     display: flex;
     justify-content: space-between;
@@ -221,14 +226,14 @@ section.carrinho div div.pagamento ul
     padding: 10px 0;
 }
 
-section.carrinho div div.pagamento button
+section.carrinho div.pc div.pagamento button
 {
     background: rgb(209, 186, 255);
     border: none;
     border-radius: 5px;
     font-size: 1rem;
     padding: 0.55vw 1vw;
-    margin: 1vw 4.4vw 0;
+    margin: 1vw 0 0 0;
 }
 
 /*---------------------------------
@@ -294,6 +299,7 @@ display: flex;
 font-size: 1.8rem;
 padding: 5vw 3vw 5vw 1vw;
 border-top: 3px solid  rgb(209, 186, 255);
+border-bottom: 3px solid  rgb(209, 186, 255);
 }
 
 section.outrasPaginas ul li
@@ -337,6 +343,7 @@ section.lancamentos div.produtos div
 {
     width: 90%;
     margin: 0 0 2vw 0;
+    display: block;
 }
 
 section.lancamentos div.produtos div img
@@ -434,6 +441,18 @@ padding: 2vw 0 0 0;
 footer ul.contato li.telefone
 {
 margin: 0 0 10px 0;
+}
+
+footer ul.desenvolvido
+{
+font-size: 24px;
+padding: 2vw 0 0 0;
+margin: 0 3vw 1vw 4vw;
+}
+
+footer ul.desenvolvido li
+{
+    margin: 8px 0 0 0;
 }
 
 footer div
