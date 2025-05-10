@@ -1,1 +1,463 @@
+/*---------------------------------
+              Header
+---------------------------------*/
+header
+{
+    background: rgb(209, 186, 255);
+}
 
+header div
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.15vw 1.25vw;
+}
+
+
+header div div form
+{
+   position: relative;
+   width: 250px;
+}
+
+header div div form p input
+{
+   width: 100%;
+   font-size: 1.6rem;
+   border: none;
+   border-radius: 14px;
+   padding: 0 0 0 13px;
+}
+
+header div div form p button
+{
+   position: absolute;
+   top: 0; right: 0;
+   font-size: 1.5rem;
+   border: none;
+   background: transparent;
+   outline: none;
+}
+
+header div div form p button span
+{
+   color: gray;
+}
+
+header div ul.links
+{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+header div ul.icones
+{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 0 0;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+header div ul.icones li span span
+{
+    background-color: black;
+    color: white;
+    padding: 5px 9px;
+    font-size: 1rem;
+    border-radius: 100%;
+}
+
+/*---------------------------------
+        Section - Carrinho
+---------------------------------*/
+
+section.carrinho h1
+{
+    font-size: 2rem;
+    color: rgb(110, 38, 255);
+    margin: 1vw 2vw;
+}
+
+section.carrinho div.titulo
+{
+    border-bottom: 2px solid rgb(209, 186, 255);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1vw 0 1vw;
+}
+
+section.carrinho div.titulo h2
+{
+    margin: 1vw 3vw;
+    font-size: 1.5rem;
+}
+
+section.carrinho div.compra
+{
+    border-bottom: 2px solid rgb(170, 170, 170);
+    display: flex;
+    align-items: center;
+    margin: 0 1vw 0 1vw;
+}
+
+
+section.carrinho div.compra div.itens
+{
+    margin: 1vw 1vw 1vw 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section.carrinho div.compra div.contador
+{
+    width: 20%;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 0 0 5vw ;
+}
+
+section.carrinho div.compra div.total
+{
+    justify-content: right;
+    margin: 0 3.25vw 0 0;
+    font-size: 1.5rem;
+}
+
+section.carrinho div.compra div.contador button
+{
+    border: none;
+    background-color: white;
+    padding: 1vw;
+    font-size: 1.5rem;
+}
+
+section.carrinho div.compra div.itens img
+{
+    width: 100%;
+}
+
+section.carrinho div.compra div.itens div
+{
+    margin: 6vw 0 6vw 0;
+    display: block;
+}
+
+section.carrinho div.compra div.itens div h2
+{
+    font-size: 1.5rem;
+    margin: 0 0 1vw 0;
+}
+
+section.carrinho div.compra div.itens div p.texto
+{
+    margin: 0 0 1vw 0;
+    color: gray;
+}
+
+section.carrinho button.voltar
+{
+    margin: 1vw 2vw;
+    background-color: white;
+    padding: 1vw;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+section.carrinho div.pc
+{
+    display: flex;
+    margin: 2vw 2vw;
+}
+
+section.carrinho div.pc div form p input
+{
+    font-size: 1rem;
+    padding: 0.5vw 1vw;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+section.carrinho div.pc div form p button
+{
+    font-size: 1rem;
+    padding: 0.55vw 1vw;
+    margin: 0 0.5vw;
+    background: rgb(209, 186, 255);
+    border: none;
+    border-radius: 5px;
+}
+
+section.carrinho div.pc div.pagamento
+{
+    margin: 0 20vw;
+    display: block;
+    border: 2px solid black;
+    padding: 1.5vw 1vw;
+    border-radius: 5px;
+    width: 60%;
+    text-align: center;
+}
+
+section.carrinho div.pc div.pagamento h2
+{
+    font-size: 1.5rem;
+    margin: 0 0 1vw;
+}
+
+section.carrinho div.pc div.pagamento ul.border
+{
+    border: none;
+} 
+
+section.carrinho div.pc div.pagamento ul
+{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    padding: 10px 0;
+}
+
+section.carrinho div.pc div.pagamento button
+{
+    background: rgb(209, 186, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.55vw 1vw;
+    margin: 1vw 0 0 0;
+}
+
+/*---------------------------------
+        Section - Sugestao
+---------------------------------*/
+section h2.sugestaoProduto
+{
+  background-color: rgb(209, 186, 255);
+  padding: 15px;
+  margin: 5vw 82vw 0 4vw;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+section ul li.nome
+{
+  font-size: xx-large;
+  margin: 3vw 9vw 3vw 2vw;
+}
+
+main section.sugestao div p.preco
+{
+  font-size: 3rem;
+  margin: 23vw 0 16vw 13vw;
+  border: 5px solid rgb(209, 186, 255);
+  background-color: rgb(209, 186, 255);
+  padding: 2px;
+}
+
+main section.sugestao div p
+{
+  margin: 0 15vw 0 0;
+}
+
+main section div
+{
+  justify-content: space-between;
+  width: 93%;
+  display: flex;
+}
+
+main section ul li.descricao
+{
+  font-size: 1.2vw;
+  color: rgb(80, 80, 80);
+  margin: 0 0 0.7vw 1vw;
+}
+
+main section.sugestao div p.imagem img
+{
+  margin: 5vw 0 12vw 20vw;
+}
+
+/*---------------------------------
+        Outras Páginas
+---------------------------------*/
+
+section.outrasPaginas ul
+{
+
+justify-content: center;
+display: flex;
+font-size: 1.8rem;
+padding: 5vw 3vw 5vw 1vw;
+border-top: 3px solid  rgb(209, 186, 255);
+border-bottom: 3px solid  rgb(209, 186, 255);
+}
+
+section.outrasPaginas ul li
+{
+margin: 0 4vw 0vw 4vw;
+border-right: 1px solid rgb(80, 80, 80);
+padding: 0 8vw 0 0;
+}
+
+section.outrasPaginas ul li span
+{
+padding: 0 0.9vw 0 0.9vw;
+}
+
+section.outrasPaginas ul li:last-child
+{
+padding: 0;
+border: none;
+}
+
+/*---------------------------------
+     Section - Lançamentos
+---------------------------------*/
+
+section.lancamentos h1
+{
+    font-size: 2rem;
+    margin: 1vw 2vw;
+}
+
+section.lancamentos div.produtos
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    margin: 0 4vw;
+    align-items: end;
+}
+
+section.lancamentos div.produtos div
+{
+    width: 90%;
+    margin: 0 0 2vw 0;
+    display: block;
+}
+
+section.lancamentos div.produtos div img
+{
+    width: 100%;
+    padding: 4px 0 4px 0;
+}
+
+section.lancamentos div.produtos div h2
+{
+    font-size: 1.5rem;
+    padding: 4px 0 4px 0;
+}
+
+section.lancamentos div.produtos div p
+{
+    font-size: 1rem;
+    color: grey;
+    padding: 4px 0 4px 0;
+}
+
+section.lancamentos div.produtos div div
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0 4px 0;
+}
+
+section.lancamentos div.produtos div div p
+{
+    color: black;
+}
+
+section.lancamentos div.produtos div div p.coracao
+{
+    color: rgb(209, 186, 255);
+}
+
+section.lancamentos div.produtos div p.botao
+{
+    padding: 1vw 0;
+    color: black;
+    background-color: rgb(209, 186, 255);
+    text-align: center;
+    border-radius: 3px;
+}
+  
+/*---------------------------------
+              Footer
+---------------------------------*/
+
+footer
+{
+background-color: rgb(209, 186, 255);;
+}
+
+footer ul li a
+{
+    color: black;
+}
+
+footer ul.icones
+{
+justify-content: center;
+display: flex;
+}
+
+footer ul.cartoes
+{
+justify-content: center;
+display: flex;
+font-size: 1.7rem;
+}
+
+footer ul.icones li
+{
+margin: 0 3.5px 8px 3.5px;
+font-size: 1.9rem;
+}
+
+footer ul.cartoes li
+{
+margin: 0 3.5px 0 4.8px;
+}
+
+footer ul.contato
+{
+font-size: 1.6rem;
+margin: 0vw 0 2.5vw 0;
+text-align: center;
+padding: 2vw 0 0 0;
+}
+
+footer ul.contato li.telefone
+{
+margin: 0 0 10px 0;
+}
+
+footer ul.desenvolvido
+{
+font-size: 24px;
+padding: 2vw 0 0 0;
+margin: 0 3vw 1vw 4vw;
+}
+
+footer ul.desenvolvido li
+{
+    margin: 8px 0 0 0;
+}
+
+footer div
+{
+font-size: 24px;
+margin: 0 3vw 0 4vw;
+padding: 0 0 1.1vw 0;
+ }
