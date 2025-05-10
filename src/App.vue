@@ -157,11 +157,7 @@ const carrinho = ref
 
 let abrirCarrinho = ref(false)
 
-let idSugestao = Math.random(1, 7);
-
 </script>
-
-
 
 <template>
   <header>
@@ -220,9 +216,10 @@ let idSugestao = Math.random(1, 7);
     </div>
   </header>
 
+  
   <main>
-    <section class="carrinho" v-if="abrirCarrinho">
-
+  
+        <section class="carrinho" v-if="abrirCarrinho">
       <h1>
         Carrinho
       </h1>
@@ -317,6 +314,47 @@ let idSugestao = Math.random(1, 7);
     </section>
 
     <section v-else>
+    
+      <section class="sugestao">
+
+       <h2 class="sugestaoProduto">Sugestão de produto</h2>
+
+        <ul>
+
+          <li class="nome">
+            Combo Cuide-se Bem Feira Cuidados Faciais: Gel de Limpeza Tangerina 150g + Hidratante Cremoso Banana 80g + Máscara Facial Noturna Melancia 50g
+          </li>
+
+          <li class="descricao">
+          Com Cuide-se Bem Feira, a feira é diferente, está em toda parte, vai com você aonde você for, no dia e na hora que você quiser!<br> O Combo Cuide-se Bem Feira Cuidados Faciais proporciona uma mistura de frutas tropicais para um skincare com diferentes fragrâncias, texturas e novas maneiras de se amar.
+          </li>
+
+          </ul>
+
+          <div>
+
+               <p class="preco">R$111,90</p>
+
+               <p class="imagem"><img src="/images/sugestao.png" alt=""></p>
+
+          </div>
+
+      </section>
+
+       <section class="outrasPaginas">
+
+        <ul>
+
+          <li><span class="fa-solid fa-truck"></span><a href="">Frete grátis para SC!</a></li>
+
+          <li><span class="fa-solid fa-lightbulb"></span><a href="">Produtos recomendados</a></li>
+
+          <li><span class="fa-solid fa-dollar-sign"></span><a href="">Mais vendidos</a></li>
+
+        </ul>
+
+      </section>
+    
       <section class="lancamentos">
         <h1>
           Lançamentos
@@ -347,8 +385,50 @@ let idSugestao = Math.random(1, 7);
     </section>
 
   </main>
+  
+ <footer>
 
-</template>
+  <ul class="contato">
+
+    <li class="telefone">Contato: 41 3406-8393</li>
+
+    <li>Segunda à sexta, 8h às 20h - Sábado, 9h às 18h</li>
+
+  </ul>
+
+  <ul class="icones">
+
+    <li><i class="fa-brands fa-square-facebook"></i></li>
+
+    <li><i class="fa-brands fa-square-instagram"></i></li>
+
+    <li><i class="fa-brands fa-square-twitter"></i></li>
+
+    <li><i class="fa-brands fa-square-youtube"></i></li>
+
+    <li><i class="fa-brands fa-square-whatsapp"></i></li>
+
+    <li><i class="fa-solid fa-square-phone"></i></li>
+
+  </ul>
+
+  <ul class="cartoes">
+
+    <li><i class="fa-brands fa-cc-visa"></i></li>
+
+    <li><i class="fa-brands fa-cc-mastercard"></i></li>
+
+    <li><i class="fa-brands fa-pix"></i></li>
+
+  </ul>
+
+  <div>
+
+    <p>Alguns direitos reservados &copy;<br>OBoticário 2025.</p>
+
+  </div>
+
+</footer>
 
 <style src="./assets/reset.css"></style>
 

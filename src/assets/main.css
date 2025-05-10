@@ -10,40 +10,38 @@ header div
 {
     display: flex;
     justify-content: space-between;
-
     padding: 1.15vw 1.25vw;
 }
 
 
 header div div form
 {
-    position: relative;
-    width: 250px;
-
+   position: relative;
+   width: 250px;
 }
 
 header div div form p input
 {
-    width: 100%;
-    font-size: 1.6rem;
-    border: none;
-    border-radius: 14px;
-    padding: 0 0 0 13px;
+   width: 100%;
+   font-size: 1.6rem;
+   border: none;
+   border-radius: 14px;
+   padding: 0 0 0 13px;
 }
 
 header div div form p button
 {
-    position: absolute;
-    top: 0; right: 0;
-    font-size: 1.5rem;
-    border: none;
-    background: transparent;
-    outline: none;
+   position: absolute;
+   top: 0; right: 0;
+   font-size: 1.5rem;
+   border: none;
+   background: transparent;
+   outline: none;
 }
 
 header div div form p button span
 {
-    color: gray;
+   color: gray;
 }
 
 header div ul.links
@@ -72,77 +70,6 @@ header div ul.icones li span span
     padding: 5px 9px;
     font-size: 1rem;
     border-radius: 100%;
-}
-
-/*---------------------------------
-     Section - Lançamentos
----------------------------------*/
-
-section.lancamentos h1
-{
-    font-size: 2rem;
-    margin: 1vw 2vw;
-}
-
-section.lancamentos div.produtos
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: space-between;
-    margin: 0 4vw;
-    align-items: end;
-}
-
-section.lancamentos div.produtos div
-{
-    width: 90%;
-    margin: 0 0 2vw 0;
-}
-
-section.lancamentos div.produtos div img
-{
-    width: 100%;
-    padding: 4px 0 4px 0;
-}
-
-section.lancamentos div.produtos div h2
-{
-    font-size: 1.5rem;
-    padding: 4px 0 4px 0;
-}
-
-section.lancamentos div.produtos div p
-{
-    font-size: 1rem;
-    color: grey;
-    padding: 4px 0 4px 0;
-}
-
-section.lancamentos div.produtos div div
-{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 4px 0 4px 0;
-}
-
-section.lancamentos div.produtos div div p
-{
-    color: black;
-}
-
-section.lancamentos div.produtos div div p.coracao
-{
-    color: rgb(209, 186, 255);
-}
-
-section.lancamentos div.produtos div p.botao
-{
-    padding: 1vw 0;
-    color: black;
-    background-color: rgb(209, 186, 255);
-    text-align: center;
-    border-radius: 3px;
 }
 
 /*---------------------------------
@@ -303,3 +230,215 @@ section.carrinho div div.pagamento button
     padding: 0.55vw 1vw;
     margin: 1vw 4.4vw 0;
 }
+
+/*---------------------------------
+        Section - Sugestao
+---------------------------------*/
+section h2.sugestaoProduto
+{
+  background-color: rgb(209, 186, 255);
+  padding: 15px;
+  margin: 5vw 82vw 0 4vw;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+section ul li.nome
+{
+  font-size: xx-large;
+  margin: 3vw 9vw 3vw 2vw;
+}
+
+main section.sugestao div p.preco
+{
+  font-size: 3rem;
+  margin: 23vw 0 16vw 13vw;
+  border: 5px solid rgb(209, 186, 255);
+  background-color: rgb(209, 186, 255);
+  padding: 2px;
+}
+
+main section.sugestao div p
+{
+  margin: 0 15vw 0 0;
+}
+
+main section div
+{
+  justify-content: space-between;
+  width: 93%;
+  display: flex;
+}
+
+main section ul li.descricao
+{
+  font-size: 1.2vw;
+  color: rgb(80, 80, 80);
+  margin: 0 0 0.7vw 1vw;
+}
+
+main section.sugestao div p.imagem img
+{
+  margin: 5vw 0 12vw 20vw;
+}
+
+/*---------------------------------
+        Outras Páginas
+---------------------------------*/
+
+section.outrasPaginas ul
+{
+
+justify-content: center;
+display: flex;
+font-size: 1.8rem;
+padding: 5vw 3vw 5vw 1vw;
+border-top: 3px solid  rgb(209, 186, 255);
+}
+
+section.outrasPaginas ul li
+{
+margin: 0 4vw 0vw 4vw;
+border-right: 1px solid rgb(80, 80, 80);
+padding: 0 8vw 0 0;
+}
+
+section.outrasPaginas ul li span
+{
+padding: 0 0.9vw 0 0.9vw;
+}
+
+section.outrasPaginas ul li:last-child
+{
+padding: 0;
+border: none;
+}
+
+/*---------------------------------
+     Section - Lançamentos
+---------------------------------*/
+
+section.lancamentos h1
+{
+    font-size: 2rem;
+    margin: 1vw 2vw;
+}
+
+section.lancamentos div.produtos
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    margin: 0 4vw;
+    align-items: end;
+}
+
+section.lancamentos div.produtos div
+{
+    width: 90%;
+    margin: 0 0 2vw 0;
+}
+
+section.lancamentos div.produtos div img
+{
+    width: 100%;
+    padding: 4px 0 4px 0;
+}
+
+section.lancamentos div.produtos div h2
+{
+    font-size: 1.5rem;
+    padding: 4px 0 4px 0;
+}
+
+section.lancamentos div.produtos div p
+{
+    font-size: 1rem;
+    color: grey;
+    padding: 4px 0 4px 0;
+}
+
+section.lancamentos div.produtos div div
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0 4px 0;
+}
+
+section.lancamentos div.produtos div div p
+{
+    color: black;
+}
+
+section.lancamentos div.produtos div div p.coracao
+{
+    color: rgb(209, 186, 255);
+}
+
+section.lancamentos div.produtos div p.botao
+{
+    padding: 1vw 0;
+    color: black;
+    background-color: rgb(209, 186, 255);
+    text-align: center;
+    border-radius: 3px;
+}
+  
+/*---------------------------------
+              Footer
+---------------------------------*/
+
+footer
+{
+background-color: rgb(209, 186, 255);;
+}
+
+footer ul li a
+{
+    color: black;
+}
+
+footer ul.icones
+{
+justify-content: center;
+display: flex;
+}
+
+footer ul.cartoes
+{
+justify-content: center;
+display: flex;
+font-size: 1.7rem;
+}
+
+footer ul.icones li
+{
+margin: 0 3.5px 8px 3.5px;
+font-size: 1.9rem;
+}
+
+footer ul.cartoes li
+{
+margin: 0 3.5px 0 4.8px;
+}
+
+footer ul.contato
+{
+font-size: 1.6rem;
+margin: 0vw 0 2.5vw 0;
+text-align: center;
+padding: 2vw 0 0 0;
+}
+
+footer ul.contato li.telefone
+{
+margin: 0 0 10px 0;
+}
+
+footer div
+{
+font-size: 24px;
+margin: 0 3vw 0 4vw;
+padding: 0 0 1.1vw 0;
+ }
